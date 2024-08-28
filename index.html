@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-mex">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <!--encabezado-->
+    <header>
+        <a href="#">
+            <img src="./images/Logo.svg" alt="Logo" class="logo">
+        </a>
+    </header>
+    <!-- seccion principal-->
+    <main>
+        <section class="encriptador">
+            <textarea class="encriptar" placeholder="Ingrese el texto aquí".></textarea>
+            <div class="encriptador__aviso">
+                <img src="./images/alerta.svg" alt="aviso" class="image__aviso">
+                <p class="texto__aviso">Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="encriptador__contenedor">
+                <button type="submit" class="btn__encriptar">Encriptar</button>
+                <button type="submit" class="btn__desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="tarjeta">
+            <div class="tarjeta__contenedor">
+                <img src="./images/Muñeco.svg" alt="Persona" class="imagen__persona">
+                <p class="texto__uno">Ningún mensaje fue encontrado</p>
+                <p class="texto__dos">Ingrese el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <textarea type="mensaje" class="evaluar" readonly></textarea>
+            <button type="submit" class="btn__copiar">Copiar</button>
+        </section>
+    </main>
+    <!----pie de pagina-->
+    <footer>
+        <p class="copyright">&copy;copyright 2024 - Encriptador - desarrollado por BiankZC</p>
+    </footer>
+
+    <script src="encriptacion.js"></script>
+
+</body>
+</html>
